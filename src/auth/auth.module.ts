@@ -20,7 +20,7 @@ import { JwtStrategy } from './jwt.strategy';
       },
     }),
   ],
-  exports: [JwtStrategy, PassportModule],
+  exports: [JwtStrategy, PassportModule, MongooseModule],
   providers: [AuthService, IsUniqueValue, JwtStrategy],
 })
 export class AuthModule {}
