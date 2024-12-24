@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
-import { Task } from 'src/tasks/schema/task.schema';
+import { Task } from '../../tasks/schema/task.schema';
 
 @Schema({
   timestamps: true,

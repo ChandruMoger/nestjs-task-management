@@ -9,10 +9,7 @@ import { User } from 'src/auth/schema/auth.schema';
 
 @Injectable()
 export class TasksService {
-  constructor(
-    @InjectModel(Task.name) private taskModel: Model<Task>,
-    @InjectModel(User.name) private userModel: Model<User>,
-  ) {}
+  constructor(@InjectModel(Task.name) private taskModel: Model<Task>) {}
   private tasks: ITask[] = [];
 
   async getAllTasks(user: User): Promise<Task[]> {

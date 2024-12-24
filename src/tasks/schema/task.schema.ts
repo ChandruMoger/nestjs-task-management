@@ -1,7 +1,7 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { TaskStatus } from '../task.model';
 import mongoose from 'mongoose';
-import { User } from 'src/auth/schema/auth.schema';
+import { User } from '../../auth/schema/auth.schema';
 import { Exclude } from 'class-transformer';
 // import { Exclude } from 'class-transformer';
 
